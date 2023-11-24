@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Common components default styling */
+  .btn-primary {
+    @apply max-w-fit h-10 px-4 py-2 bg-primary text-white text-base font-medium rounded-md shadow-sm;
+  }
+  .btn-outline {
+    @apply max-w-fit h-10 px-4 py-2 bg-white text-primary text-base font-medium rounded-[5px] border border-primary;
+  }
+  .default-label {
+    @apply text-dark text-sm font-medium;
+  }
+  .default-input {
+    @apply w-full h-9 px-3 py-2 bg-white rounded-[5px] border border-lightgrey;
+  }
+
+  .default-input::placeholder {
+    @apply text-placeholder text-sm font-normal;
+  }
+}
